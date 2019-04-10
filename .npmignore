@@ -1,0 +1,10 @@
+*.iml
+.DS_Store
+.editorconfig
+.eslintrc.json
+.idea/
+.rpt2_cache/
+coverage/
+docs/
+node_modules/
+test/
