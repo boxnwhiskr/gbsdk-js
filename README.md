@@ -27,7 +27,7 @@ code above:
       } else if(value === 'YOUR_VALUE_B') {
           // The user is assigned to YOUR_VALUE_B.
           // Do something here to provide YOUR_VALUE_B related experience.
-      } else /* if value === '_DEFAULT' */{
+      } else /* if value === '_DEFAULT' */ {
           // The user is assigned to the default version.
           // Usually you don't want to do something here.
       }
