@@ -19,19 +19,19 @@ For pages containing one or more experiments, add the following code in addition
 code above:
 
 ```javascript
-  gb.getAssigns(function(assigns) {
-      const value = assigns.value('YOUR_EXP_ID', 'YOUR_VARIABLE_ID');
-      if(value === 'YOUR_VALUE_A') {
-          // The user is assigned to YOUR_VALUE_A.
-          // Do something here to provide YOUR_VALUE_A related experience.
-      } else if(value === 'YOUR_VALUE_B') {
-          // The user is assigned to YOUR_VALUE_B.
-          // Do something here to provide YOUR_VALUE_B related experience.
-      } else /* if value === '_DEFAULT' */ {
-          // The user is assigned to the default version.
-          // Usually you don't want to do something here.
-      }
-  });
+gb.getAssigns(function(assigns) {
+    const value = assigns.value('YOUR_EXP_ID', 'YOUR_VARIABLE_ID');
+    if(value === 'YOUR_VALUE_A') {
+        // The user is assigned to YOUR_VALUE_A.
+        // Do something here to provide YOUR_VALUE_A related experience.
+    } else if(value === 'YOUR_VALUE_B') {
+        // The user is assigned to YOUR_VALUE_B.
+        // Do something here to provide YOUR_VALUE_B related experience.
+    } else /* if value === '_DEFAULT' */ {
+        // The user is assigned to the default version.
+        // Usually you don't want to do something here.
+    }
+});
 ```
 
 ## Development
