@@ -40,8 +40,6 @@ Setting up environment:
 
     npm i
 
-Development server:
-
 Unit testing:
 
     npm run test
