@@ -68,6 +68,7 @@ describe('GreedyBandit.postLog()', () => {
   beforeEach(() => {
     dom = getDOM()
     fetch = injectMockFetch(dom)
+    fetch.mockResponseOnce(JSON.stringify({}))
   })
 
   it('should call API', () => {
