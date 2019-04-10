@@ -11,6 +11,7 @@ docs
 
 # IDEs
 .idea
+*.iml
 
 # OS
 .DS_Store
