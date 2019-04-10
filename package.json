@@ -1,6 +1,6 @@
 {
   "name": "gbsdk-js",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "GreedyBandit SDK for Javascript",
   "keywords": [],
   "main": "dist/gbsdk.umd.js",
