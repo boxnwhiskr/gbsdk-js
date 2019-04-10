@@ -5,7 +5,8 @@
     <title>GreedyBandit SDK demo</title>
     <script src="dist/gbsdk.umd.js"></script>
     <script>
-      let gb = new gbsdk.GreedyBandit('TOKEN')
+      let gb = new gbsdk.GreedyBandit('TOKEN', {})
+      gb.postLog()
       console.log(gb.getTid())
     </script>
 </head>
