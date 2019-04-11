@@ -2,10 +2,13 @@
 
 ## How to use
 
-First, create GreedyBandit account and configure new service to get the
-`public_token` for your service.
+You need to create GreedyBandit account and configure new service to get the
+`public_token` for your service. Consult [GreebyBandit service's command-line
+interface manual](https://github.com/boxnwhiskr/gbscli) if you haven't created
+the account.
 
-Add following code snippet to every page of your site:
+Using the obtained `public_token`, add following code snippet to every page of
+your site:
 
 ```html
 <script type="text/javascript" src="//unpkg.com/gbsdk@0.3.0"></script>
@@ -15,8 +18,8 @@ Add following code snippet to every page of your site:
 </script>
 ```
 
-For pages containing one or more experiments, add the following code in addition to the
-code above:
+For pages containing one or more experiments, add the following code in
+addition to the code above:
 
 ```javascript
 gb.getAssigns(function(assigns) {
