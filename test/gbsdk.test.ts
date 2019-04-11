@@ -33,8 +33,9 @@ describe('GreedyBandit TID', () => {
     gbsdk.Time.reset()
   })
 
-  it('should allow to omit an options object', () => {
-    gb = new gbsdk.GreedyBandit('TOKEN', {prefetchAssigns: false})
+  it('should allow users to provide externally generated tid', () => {
+    gb = getGreedyBandit(dom, {tid: 'custom_tid'})
+    expect(gb.getTid()).toEqual('custom_tid')
   })
 
   it('should be saved to _gbtid cookie for the first-time visitor', () => {

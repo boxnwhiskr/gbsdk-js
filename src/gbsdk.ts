@@ -14,11 +14,11 @@ export class GreedyBandit {
   constructor(token: string, options: Options) {
     this.win = options.window || window
     this.endpoint = options.endpoint || 'https://api.greedybandit.com'
-
-    this.token = token
-    this.tid = this.generateTid()
+    this.tid = options.tid || this.generateTid()
     this.uid = options.uid || null
     this.segs = options.segs || []
+
+    this.token = token
 
     if (options.prefetchAssigns !== false) {
       this.getAssigns(() => {
@@ -126,6 +126,7 @@ export type Options = {
   window?: Window,
   endpoint?: string,
   prefetchAssigns?: boolean,
+  tid?: string,
   uid?: string,
   segs?: string[],
 }
