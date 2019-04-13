@@ -1,5 +1,9 @@
 # GreedyBandit SDK for Javascript
 
+[![Build Status](https://travis-ci.org/boxnwhiskr/gbsdk-js.svg?branch=master)](https://travis-ci.org/boxnwhiskr/gbsdk-js)
+
+GreedyBandit is a cloud-based A/B testing and optimization engine developed by Box and Whisker. **GreedyBandit SDK for Javascript** is a small script lets you connect your website with GreedyBandit service with minimal effort.
+
 ## How to use
 
 You need to create GreedyBandit account and configure new service to get the
