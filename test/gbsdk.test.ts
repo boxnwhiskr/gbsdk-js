@@ -91,7 +91,7 @@ describe('GreedyBandit.postLog()', () => {
     expect(sent).toEqual({
       '_t': 'TOKEN',
       '_tid': gb.getTid(),
-      '_url': 'http://x.com/index?q=1',
+      '_url': 'http://a.io/index?q=1',
     })
   })
 
@@ -102,17 +102,17 @@ describe('GreedyBandit.postLog()', () => {
       '_t': 'TOKEN',
       '_tid': gb.getTid(),
       '_uid': gb.getUid(),
-      '_url': 'http://x.com/index?q=1',
+      '_url': 'http://a.io/index?q=1',
     })
   })
 
   it('should allow custom params', () => {
     const gb = getGreedyBandit(dom)
-    const sent = gb.postLog({'_url': 'http://x.com/hello', 'level': '3'})
+    const sent = gb.postLog({'_url': 'http://a.io/hello', 'level': '3'})
     expect(sent).toEqual({
       '_t': 'TOKEN',
       '_tid': gb.getTid(),
-      '_url': 'http://x.com/hello',
+      '_url': 'http://a.io/hello',
       'level': '3',
     })
   })
@@ -289,7 +289,7 @@ function injectMockFetch(dom: jsdom.JSDOM) {
 
 
 function getDOM(): jsdom.JSDOM {
-  const dom = new jsdom.JSDOM('<html lang="en">', {url: 'http://x.com/index?q=1'})
+  const dom = new jsdom.JSDOM('<html lang="en">', {url: 'http://a.io/index?q=1'})
   // @ts-ignore
   dom.window.console.log = () => {
     return
