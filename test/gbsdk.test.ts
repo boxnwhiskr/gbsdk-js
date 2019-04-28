@@ -76,7 +76,7 @@ describe('GreedyBandit.postLog()', () => {
     const gb = getGreedyBandit(dom)
     const sent = gb.postLog()
     const expectedReq = [
-      'https://api.greedybandit.com/logs',
+      'https://api.greedybandit.com/ingester/logs',
       {
         method: 'POST',
         headers: {'Content-Type': 'application/json; charset=utf-8'},

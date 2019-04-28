@@ -70,7 +70,7 @@ export class GreedyBandit {
     const userId = this.getUid()
     if (userId !== null) populatedLog['_uid'] = userId
 
-    const url = `${this.endpoint}/logs`
+    const url = `${this.endpoint}/ingester/logs`
 
     const win: any = this.win
     win.fetch(url, {
